@@ -100,10 +100,14 @@ figcaption {
 
 nav {
     float: left;
-    width:11.25rem;
+    width:20rem;
+    word-spacing: 15rem;
+    white-space: 5rem;
+    border-spacing: 5rem;
 }
 
 footer {
+    text-align: right;
     clear: both;
     margin-top:1.5rem;
 }
@@ -186,19 +190,16 @@ figcaption{
 }
 
 /* Link Styling */
-a{
-    text-decoration: none;
-        color: inherit;
-    color
-}
+
+
 a:link{
     text-decoration: none;
         color: blue;
-        background-color: aqua;
+        background-color: white;
 }
 a:visited{
     text-decoration: none;
-        color: #33658A;
+        color: black;
 }
 A:focus{
     text-decoration: none;
@@ -232,44 +233,29 @@ ol{
 
 
 /* Navigation Menu */
-nav{
-    padding-left: 0rem;
-    margin-top: .25rem;
-    
-}
-nav a {
-   text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    line-height: 3;
-    text-align: center;
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-    border-style: solid;
-    border-width: 0.063rem;
-    border-color: #33658A;
-}
-nav a:focus{
-    color: #FFF;
-    background-color: #33658A;
-}
-nav a:hover{
-    color: #FFF;
-    background-color: #33658A;
-}
-have a:active{
-    color: #FFF;
-    background-color: #000;
-}
-
-
-
-
-
-
-/* Footer Styles */
-footer{
-    text-align: center;
-}
-
-
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
