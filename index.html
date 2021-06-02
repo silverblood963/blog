@@ -14,9 +14,25 @@
         
         
         <!-- Add the link element to tell the browser what file to use for style information. -->
-        
+
+
         
     </head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
     <body>
         <header>
              
@@ -42,6 +58,8 @@
         
         
         <main>
+            <div class="row">
+        <div class="column" style="background-color:#FFB695;">
             <h2>Metagame</h2>
    
             
@@ -90,7 +108,7 @@
                         
                         <!-- Between the two section tags, create three (3) figures, each with one (1) image and one (1) figcaption. -->
                         
-                    </section>
+                    
                     <img src="images/industrial-city.jpg">
                     <figcaption></figcaption>
                     <img src="images/industrial-city-2.jpg">
@@ -98,10 +116,14 @@
                     <img src="images/in-nomino.jpg">
                     <figcaption></figcaption>
                     <!-- Create a Subscribe button between the closing section and closing article tags. -->
-
-                
+                    </section>
+                    
                 </article>
                 <aside>
+                    <div class="row">
+                        
+        <div class="column" style="background-color:#FFB695;">
+        
                     <h3> Gaming</h3>
                     <img src="images/-nomino.jpg">
                     <p Class: small></p>
@@ -114,7 +136,9 @@
                       <img src="images/dustrial-city.jpg">
                       <p Class: small></p>
                     <!-- You guesed it, add an additional level three heading, followed by an image and a paragraph -->
-                    
+                    </div>
+                    </div>
+
                     
                     <!-- Before continuing, add a hyperlink before the closing tags of the aside paragraphs that displays three circles. Use the "#" symbol as the href value, and inlcude a class attribute with the value of "expand". Note: The code to use for a cirle is:
 
@@ -146,6 +170,7 @@
             
             
             <!-- Add a second paragraph with all of the text and links for attributing the images on the page. Make sure to use the "ideal" attribution from Creative Commons. -->
+            
             
             
         </footer>
