@@ -60,191 +60,139 @@ html {
 }
 
 body {
+    
     margin: 1.5rem auto;
-    width:90%;
-    min-width:56.25rem;
+    width:100%;
 }
+
+    h1{
+text-align: center;
+  transform: rotate(3deg);
+    position: relative;
+    font-size: 50px
+        
+}
+h1 a{
+    color: aliceblue;
+}
+.spans{
+    text-color:blue;
+    padding: 10px;
+    background-color: red;
+    border-radius: 15px 50px;
+    box-shadow: black;
+    box-shadow: 5px 10px;
+    
+}
+
 
 /* Layout */
 
 main {
-    overflow:auto;
+    padding-bottom: 10px;
     min-width:45rem;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 90%;
+}
+img{
+    width: 100%;
+    display: block;
+    max-width: 400px;
+}
+.mainsection{
+    display: flex;
+}
+.mainsection article{
+    width:75%;
+}
+.mainsection aside{
+    width: 19%;
+    margin-left: 3%;
+    padding-left: 3%;
+    border-left: 2px solid #333;
+  
+}
+footer{
+    display: grid;
+    text-align: right;
+    text-decoration: none;
+}
+.end{
+    text-align: left;
     
 }
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+.imgbar{
+    display: flex;
+    
+}
+.botimg {
+  padding: 5px;
 
-section {
-    float: left;
-    min-width: 22.5rem;
-    width:50%;
 }
 
-figure {
-    width:60%;
-    margin:0 10% 0 0;
-    float:left;
+/* Clearfix (clear floats) */
+.row {
+  clear: both;
 }
-
-figure img {
-    width:100%;
-    max-width:25rem;
+.stag {
+   float: left;
+    margin: 0 12px 0 0;
 }
-
-figcaption {
-    margin:.375rem 0;
+h4{
+    text-align: center;
+    font-size: 30px;
+   text-decoration: none;
+    display: inline-block;
+    
+  
 }
-
-.long-list {
-    margin-top:0;
+h4 a{
+    color: aliceblue
 }
 
 nav {
-    float: left;
-    width:20rem;
-    word-spacing: 15rem;
-    white-space: 5rem;
-    border-spacing: 5rem;
+    font-size: 23px;
+	margin: 48px 0;
+	padding: 0 5%; 
+    background-color: #fff;
+	border-bottom: 1px solid #fff;
+	  }
+nav a:nth-child(even):hover{
+    color:black;
+    text-decoration-line: line-through;
+    transform: rotate(-10deg);
 }
-
-footer {
-    text-align: right;
-    clear: both;
-    margin-top:1.5rem;
+nav a:nth-child(odd):hover{
+    color:black;
+    text-decoration-line: line-through;
+    transform: rotate(10deg);
 }
+nav a:nth-child(1):active;
 
-    text-align: right;
+}
+nav:nth-child(odd):focus
+nav:nth-child(odd):hover
+nav:nth-child(odd):active {
+    display: inline-block;
+    transform: rotate(-90deg);
+    
     
 }
-section, aside, nav, footer {
-  padding: .5rem;
-}
 
-/* header and footer */
-
-header, footer {
-  border-top: .125rem solid #33658A;
-  border-bottom: .125rem solid #33658A;
-}
-
-
-/* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
-
-/* NO changes should be made to any of the code above. */
-
-/* NOTE: While you will be using some of the same CSS properties, the VALUES 
-   may need to be different in order to style the page correctly. */
-
-
-
-/* Imported Typfaces */
-@font-face {
-  font-family:"Josefin Slab";
-    src:url(..fonts/josefinlab-regular.ttf); 
-    font-weight:normal;
-    font-style:normal;
-}
+nav a {
     
-@font-face {
-  font-family: Montserrat;
-  src:url(..fonts/montserrat-regular.ttf);
-  font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
-/* Typography Styles */
-
-html{
-    
-}
-h1{
-    font-family: Josefin Slab;
-    font-size: 3.75rem;
-    margin: 1.125rem;
-    text-align: center;
-    letter-spacing: 0.125rem;
-}
-h2{
-    font-family: Josefin Slab;
-    font-size: 1.5rem;
-    margin: 1.125rem;
-    letter-spacing: .0125rem;
-}
-h2 + p{
-    font-family: Josefin Slab;
-    font-size: .75rem;
-    margin: 1.125rem;
-    letter-spacing: .0125rem;
-    word-spacing: .125
-    
-}
-p{
-    font-family: Josefin Slab;
-    font-size: .75rem;
-    letter-spacing: .031rem;
-    word-spacing: .125
-}
-li{
-
-}
-figcaption{
-    font-family: Josefin Slab;
-    font-size: .75rem;
-    margin-bottom: 2rem;
-}
-
-/* Link Styling */
-
-
-}
-
-/* List Styling */
-ul{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    margin-left: 0;
-    margin-right: 0rem;
-    list-style-type: square;
-}
-ol{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    margin-left: 0;
-    margin-right: 0;
-    list-style-type: lower-alpha;
-}
-.long-list a:hover{
-    text-transform: uppercase;
-}
-
-
-
-/* Navigation Menu */
-#nav {
-	width: 100%;
-	float: left;
-	margin: 0 0 1em 0;
-	padding: 0;
-	background-color: #f2f2f2;
-	border-bottom: 1px solid #ccc;  }
-#nav ul {
-	list-style: none;
-	width: 800px;
-	margin: 0 auto;
-	padding: 0; }
-#nav li {
-	float: left; }
-#nav li a {
-	display: block;
-	padding: 8px 15px;
+	display: inline-block;
+	padding: 8px 55px;
 	text-decoration: none;
 	font-weight: bold;
-	color: #069;
-	border-right: 1px solid #ccc; }
-#nav li:first-child a {
-	border-left: 1px solid #ccc; }
-#nav li a:hover {
-	color: #c00;
-	background-color: #fff; }
+	color: steelblue;
+}
+
